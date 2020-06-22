@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Landing</title>
+		<script src="scripts/main.js" defer></script>
+		<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
+		<script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
+		<link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
+	</head>
+	<body id="imageOfTheDay">
+		<div class="grid-container">
+			<div class="apis">
+				<h1>Weather</h1>
+				<div class="rectangle" id="firstSpace">
+					<div class="input">
+						<input type="text" name="city" id="name" placeholder="Destination">	
+						<button id="showWeather">Search</button>
+					</div>
+
+					<div class="weatherRectangle">
+						<div id="weather"></div>
+					</div>
+						
+					<img src=" " id="weatherIcon">	
+				</div>
+			</div>
+
+			<div class="apis">
+				<h1>ISS Location</h1>
+				<div class="rectangle">
+					<div class="issRectangle">
+						<div id="issPosition"></div>
+						<img id="issImage" src="images/ISS.png" height="85" width="85">
+					</div>	
+				</div>
+
+			</div>
+
+			<div class="apis">
+				<h1>Current position</h1>
+				<div class="rectangle" id="whiteOne">
+					<div id="map"></div>
+				</div>
+
+			</div>
+
+			<div class="apis">
+				<h1>Coctail recipes (after landing)</h1>
+				<div class="rectangle">
+					<div id="drinks">
+						<input type="text" name="drink" id="drinkInput" placeholder="Coctail name">
+						<button id="drinkButton">Drink</button>
+					</div>
+
+					<div id="drinkInfo"></div>
+				</div>
+
+			</div>
+
+														
+		</div>
+	</body>
+</html>

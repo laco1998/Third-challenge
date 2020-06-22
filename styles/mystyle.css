@@ -1,0 +1,119 @@
+body {
+	font-family: helvetica;
+	color: #FFFFFF;
+	background-color: #444444;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: ". . .";
+}
+
+.rectangle {
+	/*display: block;*/
+	/*align-items: center;*/
+	/*justify-content: center;*/
+	height: 250px;
+	width: 475px;
+	background-color: black;
+	text-align: center;
+}
+
+.apis {
+	justify-self: center;
+}
+
+.input {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 350px;
+}
+
+input {
+	width: 13vw;
+	height: 30px;
+	margin-top: 2vh;
+	padding: 3px;
+	/*border-radius: 5px;
+	border-color: black;*/
+	border: none;
+	border-bottom: 2px solid red;
+	background-color: black;
+	color: white;
+	font-size: 16px;
+}
+
+input[type=text]:focus {
+	outline: none;
+}
+
+button {
+	width: 6vw;
+	height: 30px;
+	margin-left: 2vw;
+	background-color: black;
+	border-color: red;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.weather {
+	width: 20vw;
+	height: 12vh;
+	background-color: black;
+	text-align: center;
+	margin: auto;
+}
+
+#weather {
+	color: white;
+	margin: 3vh auto auto auto;
+	font-weight: bold;
+}
+
+#weatherIcon {
+	margin-top: -1vh;
+}
+
+.issRectangle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+	height: 250px;
+	font-size: 22px;
+}
+
+#issImage {
+	margin-left: 3vw;
+	animation-name: float;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+
+}
+
+@keyframes float {
+    from { transform: translate(0,  -25px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -25px); } 
+}
+
+#map {
+	font-size: 10px;
+	height: 34.5vh
+}
+
+#drinkInfo {
+	margin-top: 3vh;
+	padding: 20px;
+	text-align: left;
+}
+
+
