@@ -61,7 +61,7 @@ function onAPIError(error) {
 
 
 function getAPIdata2() {
-	var url = 'http://api.open-notify.org/iss-now.json';
+	var url = 'https://api.wheretheiss.at/v1/satellites/25544';
 
 	var request = url;
 	
@@ -82,8 +82,8 @@ function getAPIdata2() {
 }
 
 function onAPI2Succes(response) {
-	var lat = response.iss_position.latitude; 
-	var long = response.iss_position.longitude; 
+	var lat = response.latitude; 
+	var long = response.longitude; 
 
 	var issBox = document.getElementById('issPosition');
 	issBox.innerHTML = "LAT: " + lat + "<br><br>" + "LONG: " + long 
