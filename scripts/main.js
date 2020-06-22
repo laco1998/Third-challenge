@@ -29,7 +29,6 @@ button1.onclick = function getAPIdata() {
 
 
 function onAPISucces(response) {
-	/*var des = response.weather[0].description;*/
 	var wind = response.wind.speed;
 	var cloud = response.clouds.all;
 	var press = response.main.pressure;
@@ -40,7 +39,6 @@ function onAPISucces(response) {
 	icon.src = iconurl; 
 
 	var deg = Math.floor(response.main.temp - 273.15);
-	/*var degFeel = Math.floor(response.main.feels_like - 273.15);*/
 	var weatherBox = document.getElementById('weather');
 	weatherBox.innerHTML = "Temperature: " + deg + '&#176;C <br>' + 'Wind speed: ' + wind + ' m/s <br>' + "Pressure: " + press + 'hPa';
 	weatherBox.style.lineHeight = "2";
@@ -51,7 +49,6 @@ function onAPIError(error) {
 	alert('Invalid location', error);
 }
 
-/*getAPIdata();*/
 
 
 
@@ -84,9 +81,10 @@ function getAPIdata2() {
 function onAPI2Succes(response) {
 	var lat = response.latitude; 
 	var long = response.longitude; 
+	var vel = response.velocity;
 
 	var issBox = document.getElementById('issPosition');
-	issBox.innerHTML = "LAT: " + lat + "<br><br>" + "LONG: " + long 
+	issBox.innerHTML = "LAT: " + lat + "<br><br>" + "LONG: " + long + "<br><br>" + "SPEED: " + vel;
 
 }
 
@@ -178,4 +176,3 @@ function onAPI3Error(error) {
 	
 }
 
-/*getAPIdata3();*/

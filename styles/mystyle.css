@@ -4,6 +4,10 @@ body {
 	background-color: #444444;
 }
 
+h1 {
+	font-size: 2vw;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -13,11 +17,8 @@ body {
 }
 
 .rectangle {
-	/*display: block;*/
-	/*align-items: center;*/
-	/*justify-content: center;*/
-	height: 250px;
-	width: 475px;
+	height: 34.62vh;
+	width: 30.92vw;
 	background-color: black;
 	text-align: center;
 }
@@ -38,8 +39,6 @@ input {
 	height: 30px;
 	margin-top: 2vh;
 	padding: 3px;
-	/*border-radius: 5px;
-	border-color: black;*/
 	border: none;
 	border-bottom: 2px solid red;
 	background-color: black;
@@ -87,7 +86,7 @@ button {
 	justify-content: center;
 	text-align: left;
 	height: 250px;
-	font-size: 22px;
+	font-size: 1.2vw;
 }
 
 #issImage {
