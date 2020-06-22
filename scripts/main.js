@@ -173,6 +173,6 @@ function onAPI3Succes(response) {
 
 
 function onAPI3Error(error) {
-	
+	alert("Invalid cocktail");
 }
 
